@@ -7,7 +7,40 @@
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href="assets/css/foundation.css" />
   </head>
-  
+    <form data-abide novalidate>
+      <div class="grid-x grid-margin-x">
+        <div class="cell">
+          <div data-abide-error class="alert callout" style="display: none;">
+            <p><i class="fi-alert"></i> There is an error in your form.</p>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div class="grid-x grid-margin-x">
+      <div class="cell small-12">
+        <label>Number Required
+        <input type="text" placeholder="1234" aria-describedBy="exampleHelpText" required pattern="number">
+        <span class="form-error">
+          Please check your form is complete.
+        </span>
+        </label>
+        <label>
+          <p class="help-text" id="exampleHelpText">This is how the form is filled out.</p>
+        </label>
+      </div>
+    </div>
+    <div class="cell small-12">
+      <label>Password Required</label>
+      <input type="password" id="password" placeholder="password" aria-describedBy="exampleHelpText" required>
+      <span class="form-error">
+        This is required.
+      </span>
+      </label>
+      <p class="help-text" id="exampleHelpText">Enter a Password please</p>
+    </div>
+    
+
   <body>
     <script src="assets/js/vendor.js"></script>
     <script src="assets/js/foundation.js"></script>
